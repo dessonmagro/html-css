@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>videos no html</title>
+</head>
+<body>
+    <h1>trabalhando com vídeos</h1>
+    <p>este video esta hospedado dentro do meu proprio servidor</p>
+   <!-- este foi feito com o sugerido pelo propri vscode
+       
+    <video src="midia/pexelsmp4.mp4" width="500" controls></video><br>
+    <p>este está em mkv</p>
+    <video src="midia/pexelsmp4.mkv" width="500" controls></video><br>
+    <p>este está em m4v</p>
+    <video src="midia/Pexelsm4v.m4v" width="500" controls></video>-->
+
+    <!-- aqui foi o feito pelo guanabara e que é melhor ( é feito exatamento como nos audios... através dos sources.)-->
+
+    <video width="500" poster="images/foto-p.png" controls> <!--poster é pra colocar uma imagem bonita-->
+        <source src="midia/Pexelsmkv.mkv" type="video/mp4">
+        <source src="midia/Pexelsm4v.m4v" type="video/mp4">
+        <source src="midia/pexelsmp4.mp4" type="video/mp4">
+        <p>Seu navegador nao tem compatibilidade com vídeos.</p>
+
+<!-- os videos hospedados geram banda de dados... que fica mais caro na hospedagem do cliente.-->
+
+    </video>
+    <h1>COLOCANDO VÍDEOS DE SERVIDORES EXTERNOS</h1>
+    <p>neste modelo, nao consome a banda de hospedagem...</p>
+    <!-- para vídeos do youtube, apenas pegar la em compartilhar e incorporar...-->
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/75fK0iwhxdE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+</body>
+</html>

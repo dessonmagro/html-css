@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>midias em html</title>
+</head>
+<body>
+    <h1>imagem dinamica</h1>
+    <p>tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente e diminua o seu navegador....</p>
+
+    <picture>    <!-- aqui tem que ter cuidado, colocar na ordem do menor para o maior para nao dar problemas..-->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(min-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexível">
+    </picture>
+    <h1>trabalhando com audios no html</h1>
+    <p>Vamos aprender a reproduzir audios em html 5</p>
+    <p>as maneiras de colcoar audio no html</p>
+    <audio src="midia/rock.mp3" controls autoplay></audio>  <!-- controls é o controle e autoplay (era pra tocar automatico ao abri... )-->
+    <audio> <!-- aqui vc tem várias opções (autoplay, controls, preload, etc.)-->
+        <source src="midia/rock.mp3" type="audio/mpeg"><!-- colocar na ordem que o navegador tentara ler-->
+        <source src="midia/rock.mp3" type="audio/ogg">
+        <source src="midia/rock.mp3" type="audio/wave">
+        <p>Infelizmente o seu navegador não consegue reproduzir o audio. <a href="midia/rock.mp3">clique aqui para baixar o audio.</a></p>
+    </audio>
+
+</body>
+</html>
