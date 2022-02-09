@@ -65,7 +65,9 @@ nav > a:hover {
     background-color: var(--cor2);
     color: blanchedalmond;
 }
-
+main > h1 {
+    font-family: "face";
+}
 main > h2 {
     font-family: 'Times New Roman', Times, serif;
     color: var(--cor0);
